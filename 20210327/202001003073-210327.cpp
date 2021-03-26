@@ -19,7 +19,7 @@ void main ()
 	int offset = 2, i = 1;
 
 	//循环体
-	while ( i <= 1000 )
+	while ( i <= 5 )
 	{
 		cout << "请输入第" << i << "个字母字符：";
 		cin >> cha;
