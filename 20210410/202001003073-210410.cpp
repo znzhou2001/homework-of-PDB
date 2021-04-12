@@ -4,6 +4,7 @@
  * Organization: 电子科技大学中山学院电子信息学院电子20C班
  * Version: 1.0
  * Date: 001-1.0-202104102242
+         002-1.1-202104122158
  * Description: 本程序可计算100m高落下的球在第10次落地时共经过的路程和反弹的高度。
  * License: MIT-License
  * Website: https://znzhou.top/
@@ -21,9 +22,10 @@ void main ()
 	//十分简洁 无需注释 一读就懂
 	for ( i=1; i<=10; i++)
 	{
-		sum += hit;
+		sum += 2 * hit;
 		hit /= 2;
 	}
+	sum -= 100;
 	cout << "经过路程：" << sum << endl;
 	cout << "反弹高度：" << hit << endl;
 }
